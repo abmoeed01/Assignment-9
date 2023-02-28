@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twelve Program in JavaScript</title>
+  </head>
+  <body>
+    <script>
+      // 12 - . Write a JS code for Binary search algorithm.
+
+      function binary_search(num, item) {
+        var beg = 0,
+          last = 9,
+          mid = 0;
+        while (beg <= last) {
+          mid = parseInt((beg + last) / 2);
+          if (item == num[mid]) {
+            return mid;
+          } else if (item > num[mid]) {
+            beg = mid + 1;
+          } else {
+            last = mid - 1;
+          }
+        }
+        return -999;
+      }
+
+      function search() {
+        var num = [11, 22, 33, 44, 55, 66, 77, 88, 99, 100];
+        var item = 88;
+        var index = binary_search(num, item);
+        if (index >= 0) {
+          console.log(index);
+        } else {
+          console.log("Not Found");
+        }
+      }
+      search();
+    </script>
+  </body>
+</html>

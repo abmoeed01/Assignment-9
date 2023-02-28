@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eleven Program in JavaScript</title>
+  </head>
+  <body>
+    <script>
+      // 11 - Write a JS code for Linear search algorithm.
+
+      function linear_search() {
+        let num = [11, 22, 88, 44, 88, 66, 77, 88, 99, 100];
+        let item = 88;
+        for (let i = 0; i < num.length; i++) {
+          if (item == num[i]) {
+            console.log("Found in Index " + (i + 1));
+          }
+        }
+      }
+      linear_search();
+    </script>
+  </body>
+</html>

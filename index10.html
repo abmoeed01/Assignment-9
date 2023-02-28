@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ten Program in JavaScript</title>
+  </head>
+  <body>
+    <script>
+      // 10 - Write a JS code to find duplicate values in a given array.
+
+      let arr = [1, 2, 3, 2, 1, 4, 5, 4];
+      let a = arr.filter((each, index) => {
+        return arr.indexOf(each) !== index;
+      });
+      document.write(a);
+    </script>
+  </body>
+</html>

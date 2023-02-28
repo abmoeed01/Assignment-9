@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eight Program in JavaScript</title>
+  </head>
+  <body>
+    <script>
+      // 8 - Write a JS code to find the largest number in an array.
+
+      function maximum() {
+        let array = [5, 4, 6, 20, 30, 10];
+        let max = array[0];
+        for (let i = 0; i < array.length; i++) {
+          if (array[i] > max) {
+            max = array[i];
+          }
+        }
+        document.write(`The largest element in array is ${max}`);
+      }
+      maximum();
+    </script>
+  </body>
+</html>

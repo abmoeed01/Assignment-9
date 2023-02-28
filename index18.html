@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eighteen Program in JavaScript</title>
+  </head>
+  <body>
+    <script>
+      // 18 - Write a js program to count total number of even and odd elements in an array.
+      const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+      const even = arr.filter((number) => {
+        return number % 2 === 0;
+      });
+
+      console.log(even);
+
+      const arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+      const odds = arr2.filter((number) => {
+        return number % 2 !== 0;
+      });
+
+      console.log(odds);
+    </script>
+  </body>
+</html>
